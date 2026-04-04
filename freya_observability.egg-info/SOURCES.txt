@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+freya_observability/__init__.py
+freya_observability.egg-info/PKG-INFO
+freya_observability.egg-info/SOURCES.txt
+freya_observability.egg-info/dependency_links.txt
+freya_observability.egg-info/requires.txt
+freya_observability.egg-info/top_level.txt
