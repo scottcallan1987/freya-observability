@@ -20,6 +20,11 @@ def test_public_api_surface():
         "LLM",
         "CRAWL",
         "make_health_router",
+        "AMQP_TRACE_HEADER",
+        "TraceMiddleware",
+        "attach_trace_to_client",
+        "publish_with_trace",
+        "with_trace",
     }
     missing = expected - set(dir(fo))
     assert not missing, f"missing public API: {missing}"

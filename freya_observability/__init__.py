@@ -13,7 +13,15 @@ from freya_observability.retry import (
     retry_inference,
 )
 from freya_observability.timeouts import CRAWL, FAST, LLM, NORMAL
-from freya_observability.tracing import TRACE_HEADER, TraceContext
+from freya_observability.tracing import (
+    AMQP_TRACE_HEADER,
+    TRACE_HEADER,
+    TraceContext,
+    TraceMiddleware,
+    attach_trace_to_client,
+    publish_with_trace,
+    with_trace,
+)
 
 __all__ = [
     "CircuitBreaker",
@@ -21,6 +29,11 @@ __all__ = [
     "CircuitState",
     "TraceContext",
     "TRACE_HEADER",
+    "AMQP_TRACE_HEADER",
+    "TraceMiddleware",
+    "attach_trace_to_client",
+    "publish_with_trace",
+    "with_trace",
     "configure_logging",
     "get_logger",
     "retry_external_http",
