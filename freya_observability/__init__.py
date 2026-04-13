@@ -1,5 +1,6 @@
 """Shared observability primitives for Freya clusters."""
 
+from freya_observability.call_telemetry import CallTracer, TraceConfig
 from freya_observability.circuit_breaker import (
     CircuitBreaker,
     CircuitOpenError,
@@ -24,6 +25,8 @@ from freya_observability.tracing import (
 )
 
 __all__ = [
+    "CallTracer",
+    "TraceConfig",
     "CircuitBreaker",
     "CircuitOpenError",
     "CircuitState",
